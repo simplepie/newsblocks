@@ -1,0 +1,182 @@
+/**
+ * NewsBlocks Demo
+ * <http://newsblocks.simplepie.org>
+ *
+ * A simple demo that clones the main functionality of sites like PopURLs, 
+ * TheWebList, Original Signal, MiniBoxs, and others. Development sponsored 
+ * by Level 5 Studio <http://level5studio.com>. Go check them out!
+ * 
+ * @package NewsBlocks
+ * @version 2.0
+ * @author Ryan Parman
+ * @link http://simplepie.org/wiki/tutorial/how_to_replicate_popurls NewsBlocks tutorial page.
+ * @license http://www.opensource.org/licenses/bsd-license.php BSD License
+ */
+
+
+/***********************************************************
+Override styles from the Base stylesheet
+***********************************************************/
+body {
+	background:#fff url(../images/top_gradient.gif) repeat-x top left;
+	background-attachment:fixed;
+}
+
+div#site {
+	width:1100px;
+	background-color:transparent;
+}
+
+div.thirds div.section {
+	width:346px;
+}
+
+div#navigation {
+	text-align:center;
+}
+
+h1 {
+	font:50px/1.4em Georgia, serif;
+	font-weight:normal;
+	letter-spacing:-2px;
+}
+
+
+/***********************************************************
+General styles
+***********************************************************/
+ul, ol {
+	margin-left:0;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	list-style:none;
+}
+
+ul li, ol li {
+	margin:0;
+	padding:7px 0;
+	border-bottom:1px solid #eee;
+	font-size:0.9em;
+	line-height:1.2em;
+}
+
+p.more {
+	background-color:#eee;
+	text-align:right;
+	padding-right:10px;
+}
+
+
+/***********************************************************
+Listing styles
+***********************************************************/
+div.nb-list ul.primary {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+div.nb-list ul.secondary {
+	margin-top:0;
+	padding-top:0;
+}
+
+div.nb-list li.enclosure {
+	padding-left:20px;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-position:left 6px;
+}
+
+div.nb-list li.video {
+	background-image:url(../images/video.png);
+}
+
+div.nb-list li.audio {
+	background-image:url(../images/audio.png);
+}
+
+div.nb-list li.image {
+	background-image:url(../images/images.png);
+}
+
+
+/***********************************************************
+Wide styles
+***********************************************************/
+div.nb-wide {
+	zoom:1;
+}
+
+div.nb-wide:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+div.nb-wide li {
+	float:left;
+	border:none;
+}
+
+div.nb-wide li a {
+	display:block;
+	padding:3px;
+	margin:10px 0 0 18px;
+	background-color:#369;
+}
+
+div.nb-wide li a:hover {
+	background-color:#69c;
+}
+
+
+/***********************************************************
+Tooltip styles
+***********************************************************/
+.tool-tip {
+	color:#fff;
+	width:300px;
+	z-index:13000;
+}
+
+.tool-title {
+	font-weight:bold;
+	font:13px/1.3em Verdana, sans-serif;
+	margin:0;
+	color:#9FD4FF;
+	padding:8px 8px 4px;
+	background:url(../images/bg_tooltip.png) top left;
+}
+
+.tool-text {
+	font:12px/1.3em Verdana, sans-serif;
+	padding:4px 8px 8px;
+	background:url(../images/bg_tooltip.png) bottom right;
+}
+
+.tool-text span span {
+	display:block;
+	font:11px/1.3em Verdana, sans-serif;
+	color:#aaa;
+	padding:5px 0 0 0;
+}
+
+
+/*********************************************
+Footer styles
+*********************************************/
+div#footer {
+	padding:5px 20px;
+	margin:30px 0;
+	background-color:#f3f3f3;
+	border:0 solid #ccc;
+	border-width:1px 0;
+	text-align:center;
+}
+
+div#footer p {
+	line-height:1.6em !important;
+}

@@ -1,0 +1,280 @@
+/**
+ * Re-usable Base Styles
+ * @author Ryan Parman
+ * @updated 2 January 2008
+ */
+
+
+/***********************************************************
+YUI Reset 2.4.1 (with a few modifications)
+***********************************************************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;margin:0;padding:0;}
+q:before,q:after{content:'';}
+caption,th{text-align:left;}
+fieldset,img{border:0;}
+li{margin:0;padding:0;}
+abbr,acronym{border:0;}
+
+
+/*********************************************
+Default styles
+*********************************************/
+html, body {
+	height:100%;
+}
+
+body {
+	font:13px/1.5em Verdana, sans-serif;
+	letter-spacing:0px;
+	color:#333;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+
+div#site {
+	width:950px;
+	margin:0 auto;
+	background-color:#fff;
+	height:100%;
+	min-height:100%;
+}
+
+html>body div#site {
+	height:auto;
+}
+
+a {
+	color:#326EA1;
+	text-decoration:underline;
+	padding:0 1px;
+}
+
+a:hover {
+	color:#fff;
+	background-color:#333;
+	text-decoration:none;
+	padding:0 1px;
+}
+
+a.nohover {
+	text-decoration:none;
+	border:none;
+}
+
+a.nohover:hover {
+	background-color:transparent;
+	border:none;
+}
+
+a.namelink {
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	height:1px;
+}
+
+.footnote,
+.footnote a {
+	font-size:12px;
+	line-height:1.3em;
+	color:#aaa;
+	letter-spacing:0;
+}
+
+.footnote em {
+	background-color:transparent;
+	font-style:italic;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight:bold;
+	margin:20px 0 0 0;
+	padding:0;
+}
+
+h1, .h1 {
+	font-size:30px;
+	text-transform:none;
+}
+
+h2, .h2 {
+	font-size:25px;
+	text-transform:none;
+}
+
+h3, .h3 {
+	font-family:Georgia, serif;
+	font-size:22px;
+	font-weight:normal;
+}
+
+h4, .h4 {
+	margin:10px 0 0 0;
+	font-size:16px;
+	text-transform:none;
+}
+
+h5, .h5 {
+	margin:7px 0 0 0;
+	font-size:12px;
+	text-transform:none;
+}
+
+.highlight {
+	background-color:#ffc;
+}
+
+p {
+	margin:0;
+	padding:5px 0;
+}
+
+ul, ol {
+	list-style-type:disc;
+	margin:10px 0 10px 20px;
+	padding:0 0 0 15px;
+}
+
+ul li, ol li {
+	margin:0 0 7px 0;
+	padding:0 0 0 3px;
+}
+
+form {
+	margin:0;
+	padding:0;
+}
+
+blockquote {
+	font-size:12px;
+	line-height:1.4em;
+	color:#666;
+	border-left:4px solid #666;
+	margin:10px 30px;
+	padding:10px 20px;
+	background-color:#f3f3f3;
+}
+
+input[type=text], select, textarea {
+	font-size:14px;
+	line-height:1.5em;
+	padding:2px;
+}
+
+input[type=text], select, textarea {
+	background-color:#e9f5ff;
+	border:1px solid #333;
+}
+
+input[type=text]:focus, select:focus, textarea:focus {
+	background-color:#ffe;
+}
+
+strong {
+	font-weight:bold;
+}
+
+em {
+	font-style:italic;
+}
+
+div.hr {
+	width:100%;
+	height:15px;
+	border-top:1px solid #999;
+	margin:15px auto 0 auto;
+}
+
+div.noline {
+	border:none !important;
+}
+
+div.hr hr,
+div.hr-side hr {
+	display:none;
+}
+
+.hide {
+	position:absolute;
+	top:0;
+	left:-1000em;
+}
+
+.center {
+	text-align:center;
+}
+
+div.spacer {
+	height:15px;
+}
+
+
+/*********************************************
+Container styles
+*********************************************/
+div.container {
+	zoom:1;
+}
+
+div.container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+div.container div.left-border {
+	border-left:1px solid #999;
+}
+
+div.container div.right-border {
+	border-right:1px solid #999;
+}
+
+div.one-third div.primary {
+	float:right;
+	width:569px;
+	padding:0 0 0 20px;
+}
+
+div.one-third div.secondary {
+	float:left;
+	width:300px;
+	padding:0 20px 0 0;
+}
+
+div.two-thirds div.primary {
+	float:left;
+	width:569px;
+	padding:0 20px 0 0;
+}
+
+div.two-thirds div.secondary {
+	float:right;
+	width:300px;
+	padding:0 0 0 20px;
+}
+
+div.halves div.section {
+	float:left;
+	width:435px;
+	padding:0 10px;
+}
+
+div.thirds div.section {
+	float:left;
+	width:283px;
+	padding:0 10px;
+}
+
+div.fourths div.section {
+	float:left;
+	width:207px;
+	padding:0 10px;
+}
